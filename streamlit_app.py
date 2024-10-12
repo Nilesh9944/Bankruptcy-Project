@@ -3,7 +3,7 @@ import joblib
 joblib.dump(best_xgb_clf, 'xgboost_model.pkl')
 import pickle
 
-with open('xgboost_model.pkl', 'wb',encoding='utf-8) as f:
+with open('xgboost_model.pkl', 'r',encoding='utf-8) as f:
     pickle.dump(best_xgb_clf, f)
 
 
